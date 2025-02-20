@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/grid_items"
+        android:icon="@drawable/e_grid"
+        android:title="@string/grid_size"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/two_column_album"
+                    android:title="@string/str_two_column"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/three_column_album"
+                    android:title="@string/str_three_column"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/sort_action_album"
+        android:icon="@drawable/e_sort"
+        android:title="@string/sort_menu_title"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_by_date"
+                    android:checked="true"
+                    android:title="@string/date"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/name_sort_mode"
+                    android:title="@string/name"
+                    app:showAsAction="never" />
+            </group>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/ascending_sort_order_album"
+                    android:title="@string/ascending"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/settings_album"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>
